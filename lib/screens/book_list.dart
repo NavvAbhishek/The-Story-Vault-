@@ -36,6 +36,24 @@ class BookList extends StatelessWidget {
               log("Harry Potter added to cart!");
             },
           ),
+          BookItem(
+            title: "One Jar of Magic",
+            author: "Corey Ann Haydu",
+            imagePath: 'assets/images/one-jar.jpg',
+            price: "Rs.3500",
+            onAddToCart: () {
+              log("One Jar of Magic added to cart!");
+            },
+          ),
+          BookItem(
+            title: "Five Things About\n Ava Andrews",
+            author: "Margaret Dilloway",
+            imagePath: 'assets/images/five-things.png',
+            price: "Rs.2500",
+            onAddToCart: () {
+              log("Five Things About Ava Andrews added to cart!");
+            },
+          ),
         ],
       ),
     );

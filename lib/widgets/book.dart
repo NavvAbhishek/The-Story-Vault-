@@ -24,9 +24,11 @@ class BookItem extends StatelessWidget {
         Text(
           title,
           style: TextStyle(
-              color: Color(0xff023047),
-              fontWeight: FontWeight.w700,
-              fontSize: 24),
+            color: Color(0xff023047),
+            fontWeight: FontWeight.w700,
+            fontSize: 24,
+          ),
+          textAlign: TextAlign.center,
         ),
         Text(
           author,
