@@ -1,6 +1,8 @@
 import 'dart:developer';
+import 'package:code/screens/cart.dart';
 import 'package:code/widgets/book.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class BookList extends StatelessWidget {
   const BookList({super.key});
@@ -33,6 +35,7 @@ class BookList extends StatelessWidget {
             imagePath: 'assets/images/harry-potter.png',
             price: "Rs.4700",
             onAddToCart: () {
+              Get.to(const MyCart());
               log("Harry Potter added to cart!");
             },
           ),
@@ -42,6 +45,7 @@ class BookList extends StatelessWidget {
             imagePath: 'assets/images/one-jar.jpg',
             price: "Rs.3500",
             onAddToCart: () {
+              Get.to(const MyCart());
               log("One Jar of Magic added to cart!");
             },
           ),
@@ -51,6 +55,7 @@ class BookList extends StatelessWidget {
             imagePath: 'assets/images/five-things.png',
             price: "Rs.2500",
             onAddToCart: () {
+              Get.to(const MyCart());
               log("Five Things About Ava Andrews added to cart!");
             },
           ),
